@@ -16,7 +16,7 @@ void print(int arr[], int num){ // function created
 }
 int main(){
 	int num;
-	int key = 1;
+	int key;
 	printf("Enter the Size of an ARRAY:\n");
 	scanf("%d",&num);
 	printf("Enter the element of an ARRAY:\n");
@@ -24,6 +24,8 @@ int main(){
 		scanf("%d",&arr[i]);
 	}
 	print(arr,num); // function calling
+	printf("\n Enter the key to search \n");
+	scanf("%d",&key);
     
 	int result = linear_search(arr, num, key); // function call
 	
